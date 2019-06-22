@@ -102,7 +102,7 @@ class GenerateCSR
                 [
                     'success'     => 1,
                     'msg'         => main\mgLibs\Lang::getInstance()->T('csrCodeGeneraterdSuccessfully'),
-                    'public_key'  => $csrOut,
+                    'public_key'  => trim($csrOut),
                     'private_key' => encrypt($pKeyOut)
                 ]
         );
